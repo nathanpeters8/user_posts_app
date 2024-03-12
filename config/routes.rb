@@ -16,4 +16,10 @@ Rails.application.routes.draw do
 
   # get request to show all posts
   get '/posts', to: 'posts#show'
+
+  # put request to update a post
+  put '/posts/:id', to: 'posts#update'
+
+  # delete request to delete a post
+  delete '/posts/:id', to: 'posts#destroy'
 end
