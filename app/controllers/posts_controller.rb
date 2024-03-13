@@ -4,7 +4,6 @@ class PostsController < ApplicationController
     # handle post request to create new post
     def create
         @post = Post.create(content: params[:content], user_id: params[:user_id])
-        
         render json: @post
     end
 
